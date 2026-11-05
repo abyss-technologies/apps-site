@@ -38,6 +38,7 @@ a:hover { text-decoration: underline; }
 header.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
 header.site .brand { font-weight: 600; color: var(--text); }
 header.site .brand small { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+header.site .brand img { display: block; height: 44px; width: auto; }
 
 .lang-switch { font-size: 15px; }
 .lang-switch a { padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; margin-left: 6px; }
