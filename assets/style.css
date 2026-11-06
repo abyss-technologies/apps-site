@@ -83,3 +83,11 @@ section.lang { padding-top: 8px; }
 section.lang + section.lang { border-top: 1px solid var(--border); margin-top: 48px; padding-top: 32px; }
 
 footer.site { margin-top: 56px; font-size: 14px; color: var(--muted); }
+
+/* Lingua: con JavaScript si vede solo la lingua attiva (vedi assets/site.js). */
+html[data-lang="it"] .lang[lang="en"],
+html[data-lang="en"] .lang[lang="it"] { display: none !important; }
+html[data-lang] .sep { display: none; }
+html[data-lang] section.lang + section.lang { border-top: 0; margin-top: 0; padding-top: 8px; }
+.lang-switch a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.lang-switch a[aria-current="true"]:hover { text-decoration: none; }
